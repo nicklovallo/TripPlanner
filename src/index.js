@@ -2,7 +2,7 @@
 import mapboxgl from "mapbox-gl";
 import {createNewMarker} from "./marker.js"
 
-mapboxgl.accessToken = "";
+mapboxgl.accessToken = '';
 
 const map = new mapboxgl.Map({
   container: "map",
@@ -16,4 +16,6 @@ const map = new mapboxgl.Map({
 // markerDomEl.style.height = "39px";
 // markerDomEl.style.backgroundImage = "url(http://i.imgur.com/WbMOfMl.png)";
 
-createNewMarker("Hotel", [-87.6354, 41.8885]).addTo(map);
+createNewMarker("Activity", [-87.6354, 41.8885]).addTo(map);
+createNewMarker("Hotel", [-87.6354, 41.8843]).addTo(map);
+createNewMarker("Restaurant", [-87.6311, 41.8843]).addTo(map);
